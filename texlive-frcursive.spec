@@ -1,3 +1,9 @@
+# revision 17270
+# category Package
+# catalog-ctan /fonts/frcursive
+# catalog-date 2010-02-28 22:13:22 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-frcursive
 Version:	20100228
 Release:	1
@@ -146,6 +152,7 @@ description and a supporting LaTeX package are provided.
 %doc %{_texmfdistdir}/source/fonts/frcursive/Makefile
 %doc %{_texmfdistdir}/source/fonts/frcursive/frcursive.dtx
 %doc %{_texmfdistdir}/source/fonts/frcursive/frcursive.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -156,3 +163,5 @@ description and a supporting LaTeX package are provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts metapost tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

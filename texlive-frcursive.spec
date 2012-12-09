@@ -120,3 +120,21 @@ and a package) and font maps are provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111109-2
++ Revision: 752096
+- Rebuild to reduce used resources
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111109-1
++ Revision: 732518
+- Update to latest upstream version.
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100228-1
++ Revision: 718506
+- texlive-frcursive
+- texlive-frcursive
+- texlive-frcursive
+- texlive-frcursive
+

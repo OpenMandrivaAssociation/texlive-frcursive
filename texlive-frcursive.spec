@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-frcursive
 Version:	20111109
-Release:	6
+Release:	7
 Summary:	French cursive hand fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/frcursive

@@ -1,18 +1,12 @@
-# revision 24559
-# category Package
-# catalog-ctan /fonts/frcursive
-# catalog-date 2011-11-09 16:18:27 +0100
-# catalog-license lppl1.2
-# catalog-version undef
 Name:		texlive-frcursive
-Version:	20190228
+Version:	24559
 Release:	1
 Summary:	French cursive hand fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/frcursive
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ converted to Adobe Type 1 format. LaTeX support (NFFS fd files,
 and a package) and font maps are provided.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -113,28 +107,10 @@ and a package) and font maps are provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111109-2
-+ Revision: 752096
-- Rebuild to reduce used resources
-
-* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111109-1
-+ Revision: 732518
-- Update to latest upstream version.
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100228-1
-+ Revision: 718506
-- texlive-frcursive
-- texlive-frcursive
-- texlive-frcursive
-- texlive-frcursive
-

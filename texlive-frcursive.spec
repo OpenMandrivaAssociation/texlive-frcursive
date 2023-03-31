@@ -1,6 +1,6 @@
 Name:		texlive-frcursive
 Version:	24559
-Release:	1
+Release:	2
 Summary:	French cursive hand fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/frcursive

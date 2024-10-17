@@ -3,7 +3,7 @@ Version:	24559
 Release:	2
 Summary:	French cursive hand fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/frcursive
+URL:		https://www.ctan.org/tex-archive/fonts/frcursive
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frcursive.doc.r%{version}.tar.xz
